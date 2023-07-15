@@ -23,14 +23,12 @@ body {
 body {
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 .left-side {
-  flex: 1;
+  float: left;
+  width: 50%;
   background-color: var(--color3);
-  padding: 20px;
 }
 
 div.img-logo {
@@ -58,8 +56,8 @@ div.slogan {
 }
 
 .right-side {
-  flex: 1;
-  padding: 20px;
+  float: right;
+  width: 50%;
   background-color: var(--color6);
 }
 
