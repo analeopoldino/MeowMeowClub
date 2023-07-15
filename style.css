@@ -21,7 +21,10 @@ body {
 }
 
 body {
-  display: flex;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .left-side {
@@ -58,10 +61,6 @@ div.slogan {
   flex: 1;
   padding: 20px;
   background-color: var(--color6);
-}
-
-.grid-container {
-  display: grid;
 }
 
 div.container-navbar {
