@@ -28,6 +28,7 @@ body {
 .left-side {
   float: left;
   width: 50%;
+  height: 100%;
   background-color: var(--color3);
 }
 
@@ -58,6 +59,7 @@ div.slogan {
 .right-side {
   float: right;
   width: 50%;
+  height: 100%;
   background-color: var(--color6);
 }
 
