@@ -1,0 +1,352 @@
+/* Definição das variáveis de cores */
+:root {
+  --color1: #f3fcf4;
+  --color2: #769b7a;
+  --color3: #5b8c79;
+  --color4: #77c6a1;
+  --color5: #9aebc4;
+  --color6: #5f8364;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.left-side {
+  width: 50%;
+  background-color: var(--color3);
+}
+
+div.img-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: auto;
+}
+
+img.logo-imagem {
+  height: 192px;
+}
+
+div.nome {
+  font-family: "Fredoka", sans-serif;
+  font-size: 3.5rem;
+  color: var(--color3);
+}
+
+div.slogan {
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.8rem;
+  color: var(--color3);
+}
+
+.right-side {
+  width: 50%;
+  background-color: var(--color1);
+}
+
+.grid-container {
+  display: grid;
+}
+
+div.container-navbar {
+  padding-top: 0%;
+  padding-right: 5%;
+  size: 0cap;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #6c7a86;
+}
+
+#menu {
+  z-index: 2;
+}
+
+#menu-bar {
+  width: 45px;
+  height: 40px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: #dc052d;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nav {
+  transition: 0.3s ease;
+  display: none;
+}
+
+.nav ul {
+  padding: 0 22px;
+}
+
+.nav li {
+  list-style: none;
+  padding: 12px 0;
+}
+
+.nav li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  font-weight: bold;
+}
+
+.menu-bg,
+#menu {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: radial-gradient(circle, #dc052d, #dc052d);
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.change {
+  display: block;
+}
+
+.change .bar {
+  background-color: white;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+  width: 520px;
+  height: 460px;
+  transform: translate(-60%, -30%);
+}
+
+div.text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10%;
+  padding-top: 20%;
+  padding-bottom: 0;
+  color: #ffffff;
+}
+
+h1.fw-bold {
+  padding-bottom: 5%;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 3em;
+  font-weight: 500;
+}
+
+p.fw-bolder {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+div.button-container {
+  display: flex;
+  padding: 10%;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  padding-left: 10%;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none !important;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 12rem; /* Largura do botão retangular */
+  height: 3rem; /* Altura do botão retangular */
+  background: linear-gradient(45deg, var(--color4), var(--color1));
+  border-radius: 5rem; /* Valor ajustável para o arredondamento das bordas */
+}
+
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid var(--color1);
+  border-right: 0.125rem solid var(--color1);
+  transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: var(--color1);
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button:hover .circle {
+  width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+  background: var(--color1);
+  transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+  color: var(--color1);
+}
+
+/* Estilos dos ícones de mídia social */
+.social-container {
+  padding-left: 10%;
+  text-align: start;
+}
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1.2em;
+}
+
+.social-icons i {
+  color: var(--color1);
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  transition: all 265ms ease-out;
+}
+
+.social-icons a {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: linear-gradient(45deg, var(--color4), var(--color1));
+  transition: all 265ms ease-out;
+}
+
+.social-icons a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: linear-gradient(45deg, var(--color4), var(--color1));
+  opacity: 0;
+  transition: all 265ms ease-out;
+}
+
+/* Efeito hover nos ícones de mídia social */
+.social-icons a:hover:before {
+  transform: scale(0);
+  opacity: 1;
+  transition: all 265ms ease-in;
+}
+
+.social-icons a:hover i {
+  transform: scale(1.8);
+  color: var(--color2);
+  background: linear-gradient(45deg, var(--color1));
+  transition: all 265ms ease-in;
+}
