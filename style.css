@@ -2,10 +2,10 @@
 :root {
   --color1: #f3fcf4;
   --color2: #769b7a;
-  --color3: #5b8c79;
+  --color3: #b8e1dd;
   --color4: #77c6a1;
   --color5: #9aebc4;
-  --color6: #5f8364;
+  --color6: #062925;
 }
 
 * {
@@ -56,7 +56,7 @@ div.slogan {
   width: 50%;
   height: 100%;
   display: flex;
-  background-color: var(--color1);
+  background-color: var(--color6);
 }
 
 .grid-container {
