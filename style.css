@@ -23,6 +23,8 @@ body {
 
 .left-side {
   width: 50%;
+  height: 100%;
+  display: flex;
   background-color: var(--color3);
 }
 
@@ -52,6 +54,8 @@ div.slogan {
 
 .right-side {
   width: 50%;
+  height: 100%;
+  display: flex;
   background-color: var(--color1);
 }
 
