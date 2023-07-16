@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://analeopoldino.github.io/CaliChirpsClub/style.css" rel="stylesheet">
     <script src="https://analeopoldino.github.io/CaliChirpsClub/script.js"></script>
-
+    
     <!-- Bootstrap - Framework CSS para design responsivo -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Roboto:wght@500;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap"
         rel="stylesheet">
@@ -37,82 +37,64 @@
 
     <!-- Conteúdo da página -->
         <!-- Coluna esquerda -->
-        <div class="left-side">
-            <div class="marca">
-                <!-- Logo da marca -->
-                <div class="img-logo" style="text-align: center;">
-                    <img class="logo-imagem" src="" alt="calopsita">
+        <div class="side">
+            <!-- Barra de navegação -->
+                <div id="nav-container">
+                  <div class="bg"></div>
+                  <div class="button" tabindex="0">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </div>
+                  <div id="nav-content" tabindex="0">
+                    <ul>
+                      <li><a href="#0">Home</a></li>
+                      <li><a href="#0">Services</a></li>
+                      <li><a href="#0">Blog</a></li>
+                      <li><a href="#0">About</a></li>
+                      <li><a href="#0">Contact</a></li>
+                      <li class="small"><a href="#0">Facebook</a><a href="#0">Instagram</a></li>
+                    </ul>
+                  </div>
                 </div>
+        
+                <img class="imagem" src="../imagens/cat family-amico.svg" alt="cats">
 
                 <!-- Nome da marca -->
-                <div class="nome" style="text-align: center;">
-                    <p>CaliChirps Club</p>
+                <div class="texto" style="text-align: center;">
+                    <p class="marca">MeowMeow Club</p>
+                    <p class="slogan">Sua dose mensal de diversão felina!</p>
+                    <p class="fw-bolder">
+                        MeowAdventures é um clube de assinatura mensal que oferece diversão e entretenimento para gatos. 
+                        Os assinantes recebem caixas repletas de brinquedos estimulantes e cativantes para seus felinos, proporcionando 
+                        horas de alegria e exploração. Com entregas diretamente na porta, é uma forma emocionante de enriquecer a vida 
+                        dos gatos e encantar seus tutores com uma variedade de experiências felinas.
+                    </p>
                 </div>
 
-                <!-- Slogan da marca -->
-                <div class="slogan" style="text-align: center;">
-                    <p>O bem estar da sua calopsita é nossa missão</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Coluna direita -->
-        <div class="right-side">
-            <!-- Barra de navegação -->
-            <div id="menu">
-                <div id="menu-bar" onclick="menuOnClick()">
-                    <div id="bar1" class="bar"></div>
-                    <div id="bar2" class="bar"></div>
-                    <div id="bar3" class="bar"></div>
-                </div>
-                <nav class="nav" id="nav">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </nav>
+            <!-- Botão de chamada para ação -->
+            <div class="button-container">
+                <a href="../html/contato.html">
+                    <button class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Junte-se</span>
+                    </button>
+                </a>
             </div>
 
-            <div class="menu-bg" id="menu-bg"></div>
+            <!-- Ícones de mídia social -->
+            <div class="social-container">
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+                </ul>
+            </div>
         </div>
-
-        <!-- Texto principal -->
-        <div class="text">
-            <h1 class="fw-bold">Bem-vindo!</h1>
-            <p class="fw-bolder">
-                Bem-vindo(a) ao CaliChirps Club, o clube de assinatura que vai proporcionar uma experiência única e
-                divertida para sua ave de estimação. Com jogos e brinquedos cuidadosamente selecionados e um nosso
-                ambiente seguro e acolhedor que garante a sua ave a melhor qualidade de vida possível. Então, se você
-                quer dar o melhor para seu pet, escolha o CaliChirps Club e junte-se a nossa comunidade!
-            </p>
-        </div>
-
-        <!-- Botão de chamada para ação -->
-        <div class="button-container">
-            <a href="../html/contato.html">
-                <button class="learn-more">
-                    <span class="circle" aria-hidden="true">
-                        <span class="icon arrow"></span>
-                    </span>
-                    <span class="button-text">Junte-se</span>
-                </button>
-            </a>
-        </div>
-
-        <!-- Ícones de mídia social -->
-        <div class="social-container">
-            <ul class="social-icons">
-                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
-            </ul>
-        </div>
-    </div>
-    </div>
 
     <!-- Scripts -->
     <script src="../js/script.js"></script>
