@@ -15,85 +15,155 @@
 
 html,
 body {
-  height: 100%;
   margin: 0;
   padding: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
+ height: 5000px;
+ overflow-x: hidden;
+ font-family: 'Lexend Deca', sans-serif !important;
 }
 
-.side {
+.bg-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.efeito {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.efeito::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(
-    to right top,
-    #71002d,
-    #6a002a,
-    #5a0539,
-    #451343,
-    #2d1a45,
-    #30254e,
-    #332f57,
-    #373960,
-    #584f7a,
-    #7b6794,
-    #9f7fae,
-    #c499c7
-  );
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.842), rgba(18, 0, 84, 0.936),rgba(78, 24, 178, 0.596));
 }
 
-img.imagem {
-  height: 550px;
-  width: 500px;
-  float: right;
-  margin: 10%;
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 700;
 }
 
-div.texto {
-  text-align: left;
-  padding: 10% 0% 0% 5%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--color3);
+.nav-item>.nav-link:focus, .nav-item>.nav-link:hover {
+  color: #ffffff30 !important;
+}
+
+.nav-item > .nav-link {
+  color: #ffffff;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-item:not(:last-of-type) {
+  margin-right: 2px;
+}
+
+.nav-item > .nav-link::before {
+  position: absolute;
+  content: "";
+  width: calc(100% - 1px);
+  height: 1px;
+  background: #ffffff;
+  bottom: -6px;
+  left: 0;
+
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transform-origin: right center;
+  -ms-transform-origin: right center;
+  transform-origin: right center;
+  z-index: -1;
+
+  -webkit-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+}
+
+.nav-item > .nav-link:hover::before,
+.nav-item > .nav-link.active::before {
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.nav-item > .nav-link::before {
+  background: #ffffff;
+}
+
+.nav-item.icon a:hover .icon {
+  filter: brightness(0.6);
+}
+
+.nav-item.icon{
+  margin-right: 20px;
+  margin-left: 0px;
+  padding-right: 5px;
+}
+
+.nav-item.icon.icon-2{
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-left: 5px;
+}
+
+.texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 600px; /* Defina o valor desejado para o máximo de largura */
 }
 
 .marca {
-  font-family: "Noto Sans", sans-serif;
+  text-align: center;
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 700;
+  color: var(--color3);
 }
 
 .slogan {
-  font-family: "Noto Sans", sans-serif;
+  text-align: center;
   font-size: 2rem;
   font-weight: 600;
   padding-bottom: 2%;
   color: var(--color3);
 }
 
-p.fw-bolder {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.2em;
+p{
+  text-align: center;
+  font-size: 1rem;
   font-weight: 500;
+  color: var(--color3);
 }
 
 p {
   margin: 0%;
   margin-bottom: 0%;
 }
+
 div.button-container {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  padding: 5% 0% 1% 20%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);  
+  padding-bottom: 5%;
 }
 
 button {
@@ -122,37 +192,24 @@ button.learn-more .circle {
   margin: 0;
   width: 12rem; /* Largura do botão retangular */
   height: 3rem; /* Altura do botão retangular */
-  background: linear-gradient(50deg, #fffcfcd7, var(--color3));
+  background: linear-gradient(50deg, #22045b, #0d001d);
   border-radius: 5rem; /* Valor ajustável para o arredondamento das bordas */
 }
 
 button.learn-more .circle .icon {
+  /* Utilize apenas a classe do Font Awesome, sem o .fa-solid */
+  font-size: 1.125rem; /* Defina o tamanho do ícone conforme necessário */
+  line-height: 3rem; /* Ajuste a altura de acordo com a altura do botão */
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transform-origin: center; /* Define o ponto de origem da transformação */
+  transform: scale(1); 
   position: absolute;
   top: 0;
+  left: 0;
   bottom: 0;
   margin: auto;
-  background: var(--color3);
-}
-
-button.learn-more .circle .icon.arrow {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  left: 0.625rem;
-  width: 1.125rem;
-  height: 0.125rem;
-  background: none;
-}
-
-button.learn-more .circle .icon.arrow::before {
-  position: absolute;
-  content: "";
-  top: -0.29rem;
-  right: 0.0625rem;
-  width: 0.625rem;
-  height: 0.625rem;
-  border-top: 0.125rem solid var(--color1);
-  border-right: 0.125rem solid var(--color1);
-  transform: rotate(45deg);
+  padding-left: 1rem; /* Ajuste a posição do ícone conforme necessário */
+  color: var(--color3); /* Defina a cor do ícone */
 }
 
 button.learn-more .button-text {
@@ -164,7 +221,7 @@ button.learn-more .button-text {
   bottom: 0;
   padding: 0.75rem 0;
   margin: 0 0 0 1.85rem;
-  color: var(--color1);
+  color: var(--color3);
   font-weight: 700;
   line-height: 1.6;
   text-align: center;
@@ -173,30 +230,22 @@ button.learn-more .button-text {
 
 button:hover .circle {
   width: 100%;
+  background-color: var(--color3); /* Ajuste a cor do fundo do botão quando hover */
 }
 
-button:hover .circle .icon.arrow {
-  background: var(--color6);
-  transform: translate(1rem, 0);
-}
-
-button.learn-more:hover .circle .icon.arrow::before {
-  position: absolute;
-  content: "";
-  top: -0.29rem;
-  right: 0.0625rem;
-  width: 0.625rem;
-  height: 0.625rem;
-  border-top: 0.125rem solid var(--color6);
-  border-right: 0.125rem solid var(--color6);
-  transform: rotate(45deg);
+button:hover .circle .icon {
+  transform: scale(2);
+  color: #3b23ef; /* Ajuste a cor do ícone quando hover */
 }
 
 button:hover .button-text {
-  color: var(--color6);
+  color:#3b23ef;
 }
 
-/* Estilos dos ícones de mídia social */
+
+
+
+/* 
 .social-container {
   padding: 2% 0% 0% 15%;
 }
@@ -244,7 +293,6 @@ button:hover .button-text {
   transition: all 265ms ease-out;
 }
 
-/* Efeito hover nos ícones de mídia social */
 .social-icons a:hover:before {
   transform: scale(0);
   opacity: 1;
@@ -256,152 +304,4 @@ button:hover .button-text {
   color: var(--color6);
   background: linear-gradient(45deg, var(--color6));
   transition: all 265ms ease-in;
-}
-
-div.container-navbar {
-  padding-top: 0%;
-  padding-right: 5%;
-  size: 0cap;
-}
-
-#nav-container {
-  position: fixed;
-  height: 100vh;
-  width: 100%;
-  pointer-events: none;
-}
-#nav-container .bg {
-  position: absolute;
-  top: 70px;
-  left: 0;
-  width: 100%;
-  height: calc(100% - 70px);
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.3s;
-  background: #000;
-}
-#nav-container:focus-within .bg {
-  visibility: visible;
-  opacity: 0.6;
-}
-#nav-container * {
-  visibility: visible;
-}
-
-.button {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  z-index: 1;
-  border: 0;
-  background: transparent;
-  border-radius: 0;
-  height: 70px;
-  width: 30px;
-  cursor: pointer;
-  pointer-events: auto;
-  margin-left: 25px;
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.icon-bar {
-  display: block;
-  width: 100%;
-  height: 3px;
-  background: #aaa;
-  transition: 0.3s;
-}
-.icon-bar + .icon-bar {
-  margin-top: 5px;
-}
-
-#nav-container:focus-within .button {
-  pointer-events: none;
-}
-#nav-container:focus-within .icon-bar:nth-of-type(1) {
-  transform: translate3d(0, 8px, 0) rotate(45deg);
-}
-#nav-container:focus-within .icon-bar:nth-of-type(2) {
-  opacity: 0;
-}
-#nav-container:focus-within .icon-bar:nth-of-type(3) {
-  transform: translate3d(0, -8px, 0) rotate(-45deg);
-}
-
-#nav-content {
-  margin-top: 70px;
-  padding: 20px;
-  width: 90%;
-  max-width: 300px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: calc(100% - 70px);
-  background: #ececec;
-  pointer-events: auto;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  transform: translateX(-100%);
-  transition: transform 0.3s;
-  will-change: transform;
-  contain: paint;
-}
-
-#nav-content ul {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-#nav-content li a {
-  padding: 10px 5px;
-  display: block;
-  text-transform: uppercase;
-  transition: color 0.1s;
-}
-
-#nav-content li a:hover {
-  color: #bf7497;
-}
-
-#nav-content li:not(.small) + .small {
-  margin-top: auto;
-}
-
-.small {
-  display: flex;
-  align-self: center;
-}
-
-.small a {
-  font-size: 12px;
-  font-weight: 400;
-  color: #888;
-}
-.small a + a {
-  margin-left: 15px;
-}
-
-#nav-container:focus-within #nav-content {
-  transform: none;
-}
-
-a,
-a:visited,
-a:focus,
-a:active,
-a:link {
-  text-decoration: none;
-  outline: 0;
-}
-
-a {
-  color: currentColor;
-  transition: 0.2s ease-in-out;
-}
-
-ul {
-  padding: 0;
-  list-style: none;
 }
