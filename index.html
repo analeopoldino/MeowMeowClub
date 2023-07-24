@@ -1,33 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
-  <!-- Meta informações -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Metainformações -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Site</title>
-  <link rel="icon" href="../imagens/8630537.png">
+  <link rel="icon" href="../imagens/8630537.png" />
   <!-- Estilos personalizados do site -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 
   <!-- Bootstrap - Framework CSS para design responsivo -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
 
   <!-- Fontes do Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-    
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  
-    
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    rel="stylesheet" />
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
 <body>
@@ -36,15 +34,20 @@
 
   <!-- Conteúdo da página -->
 
+  <!-- Seção "Inicio" -->
   <section id="inicio">
+    <!-- Div com efeito de fundo -->
     <div class="efeito">
-      <img class="bg-img" src="imagens/2205.i605.024.S.m005.c13.people cats lovers illustration.jpg" alt="Bg image">
+      <!-- Imagem de fundo com gatos e pessoas -->
+      <img class="bg-img" src="imagens/2205.i605.024.S.m005.c13.people cats lovers illustration.jpg" alt="Bg image" />
+
+      <!-- Barra de navegação -->
       <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
         <div class="collapse navbar-collapse container">
-          <!-- Ícones do lado esquerdo -->
+          <!-- Ícones do lado esquerdo do menu -->
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item ">
-              <a class="nav-link  active  active-first" href="#">Home</a>
+            <li class="nav-item">
+              <a class="nav-link active active-first" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Sobre</a>
@@ -60,14 +63,13 @@
             </li>
           </ul>
 
-          <!-- Nome do site no centro -->
-          <a class="navbar-brand mx-auto" href="#">
-            MeowMeow Club
-          </a>
+          <!-- Nome do site centralizado -->
+          <a class="navbar-brand mx-auto" href="#"> MeowMeow Club </a>
 
-          <!-- Ícones do lado direito -->
+          <!-- Ícones do lado direito do menu -->
           <ul class="navbar-nav ml-auto justify-content-center align-items-center">
             <li class="nav-item icon">
+              <!-- Ícone de usuário -->
               <a class="nav-link" href="#">
                 <img class="icon" width="40" height="40"
                   src="data:image/png;base64,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"
@@ -75,6 +77,7 @@
               </a>
             </li>
             <li class="nav-item icon icon-2">
+              <!-- Ícone de bola de lã -->
               <a class="nav-link" href="#">
                 <img class="icon" width="30" height="30" src="imagens/wool-ball (2).png" alt="cat--v3">
               </a>
@@ -83,53 +86,167 @@
         </div>
       </nav>
     </div>
+
+    <!-- Conteúdo principal da seção "Inicio" -->
     <div class="texto">
+      <!-- Título do site -->
       <p class="marca">MeowMeow Club</p>
+
+      <!-- Slogan do site -->
       <p class="slogan">Sua dose mensal de diversão felina!</p>
-      <p class="text-center lh-base ">
-        Boas vindas ao MeowMeow Club! Somos um clube de assinatura que oferece diversão e alegria para gatos e seus
-        tutores. A cada mês, enviamos caixas repletas de brinquedos estimulantes e catnip de alta qualidade, criando uma
-        experiência mágica para os felinos. Nossa missão é fortalecer os laços entre você e seu gato, proporcionando
-        momentos encantadores e inesquecíveis juntos. Junte-se a nós nesta emocionante jornada felina e embarque em um
-        mundo de aventuras cativantes!
+
+      <!-- Texto descritivo -->
+      <p class="text-center lh-base">
+        Boas vindas ao MeowMeow Club! Somos um clube de assinatura que oferece
+        diversão e alegria para gatos e seus tutores. A cada mês, enviamos
+        caixas repletas de brinquedos estimulantes e catnip de alta qualidade,
+        criando uma experiência mágica para os felinos. Nossa missão é
+        fortalecer os laços entre você e seu gato, proporcionando momentos
+        encantadores e inesquecíveis juntos. Junte-se a nós nesta emocionante
+        jornada felina e embarque em um mundo de aventuras cativantes!
       </p>
     </div>
+
+    <!-- Botão de "Junte-se" -->
     <div class="button-container">
       <a href="../html/contato.html">
         <button class="learn-more">
           <span class="circle" aria-hidden="true">
+            <!-- Ícone de pata de gato -->
             <i class="fa-solid fa-paw icon"></i>
           </span>
           <span class="button-text">Junte-se</span>
         </button>
       </a>
     </div>
-
   </section>
-  <section>
 
-
-    <!-- Ícones de mídia social 
-        <div class="social-container">
-            <ul class="social-icons">
-                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
-            </ul>
+  <!-- Seção "Serviços" -->
+  <section id="services">
+    <div class="texto-servicos">
+      <h2 class="h2-servicos">Nossos Serviços</h2>
+      <p class="p-servicos text-center lh-base">
+        No MeowMeow Clube, oferecemos serviços excepcionais e cativantes para amantes de gatos.
+        Nossas opções de assinatura foram cuidadosamente projetadas para garantir que cada momento
+        com o MeowMeow Clube seja uma jornada de diversão, carinho e conexão com o mundo felino. Com uma seleção de
+        serviços
+        pensados com amor e dedicação, estamos prontos para tornar a vida dos gatos ainda mais feliz e especial!
+      </p>
+    </div>
+    <!-- Acordion com informações sobre os serviços -->
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            Serviço 1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>MeowTreats</strong>
+            Nosso serviço principal e amado pelos felinos, o MeowTreats,
+            oferece diferentes planos de assinatura. Todo mês, os clientes
+            recebem uma caixa surpresa com brinquedos estimulantes,
+            irresistíveis catnips e deliciosas guloseimas saudáveis para
+            gatos. Cada MeowTreats é cuidadosamente selecionada para
+            proporcionar diversão e bem-estar, estimulando corpo e mente dos
+            nossos amiguinhos peludos.
+          </div>
         </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Serviço 2
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>PurrBox</strong>
+            Compreendemos que cada gato é único e é por isso que oferecemos o
+            serviço "PurrBox". Os clientes preenchem um
+            questionário detalhado sobre as preferências e necessidades
+            específicas de seus gatos. Nossa equipe cria uma caixa
+            personalizada e feita sob medida, atendendo às preferências
+            individuais de cada felino. Garantimos que cada PurrBox seja
+            perfeitamente adaptada ao seu amado gato.
+          </div>
         </div>
-    </section>
-    <!-- Scripts -->
-    <script src="../js/script.js"></script>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Serviço 3
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>MeowMeow Solidário</strong>
+            Acreditamos na importância de retribuir à comunidade felina. Por
+            isso, criamos o MeowMeow Solidário, onde os clientes podem optar
+            por contribuir com uma parte de sua assinatura para ajudar abrigos
+            e organizações que cuidam de gatos abandonados. Cada doação feita
+            pelos nossos clientes ajuda a proporcionar cuidados, abrigo e
+            carinho para os gatinhos que mais precisam
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Duas imagens adicionai-->
+    <img class="img-service" src="imagens/cat-tree-svgrepo-com (3).svg">
+    <img class="img-service2" src="imagens/pet-toys-feather-svgrepo-com.svg">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.1/lottie_svg.js">
-    </script>
+    <div class="btn-servicos">
+      <button class="button-servicos">
+        Todos os Serviços
+      </button>
+    </div>
+  </section>
+  <section id="marca">
+    <div class="side-left">
+      <div class="texto-marca">
+        <h2 class="h2-marca">Mais sobre nossa marca</h2>
+        <p class="p-marca text-center lh-base">
+          O <strong>MeowMeow Club</strong> é uma marca encantadora que celebra o amor, a alegria e a conexão com o mundo felino.
+          Inspirados pela delicadeza e diversão dos gatos, nossa identidade busca transmitir essa essência cativante
+          através de cores suaves e elegantes, como tons de azul, roxo e rosa. Nosso compromisso
+          é proporcionar momentos mágicos e cheios de carinho para cada gato especial, fortalecendo os laços entre
+          tutores e seus amiguinhos peludos. Seja bem-vindo ao nosso mundo cativante e prepare-se para embarcar em uma
+          aventura encantadora ao lado do seu felino de estimação no <strong>MeowMeow Club</strong>!
+        </p>
+      </div>
+    </div>
+    <div class="btn-marca">
+      <button class="button-marca">
+        Saiba mais
+      </button>
+    </div>
 
+    <div class="side-right">
+      <img class="img-catAnimation" src="imagens/playful-cat-animate.svg" alt="animacao gato">
+      <img class="img-blob" src="imagens/pattern (4).svg" alt="svg">
+    </div>
+    
+  </section>
 
-    <script src="https://kit.fontawesome.com/49c63c8684.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Scripts -->
+  <!-- Script personalizado do site -->
+  <script src="../js/script.js"></script>
+
+  <!-- Biblioteca Lottie para animações -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.1/lottie_svg.js"></script>
+
+  <!-- Ícones do Font Awesome -->
+  <script src="https://kit.fontawesome.com/49c63c8684.js" crossorigin="anonymous"></script>
+
+  <!-- Biblioteca jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 
 </html>

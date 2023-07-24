@@ -20,9 +20,15 @@ body {
 }
 
 body {
- height: 5000px;
  overflow-x: hidden;
  font-family: 'Lexend Deca', sans-serif !important;
+}
+
+#inicio{
+  height: 100vh; /* Defina a altura da primeira seção como 100% da altura da viewport */
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .bg-img {
@@ -242,8 +248,266 @@ button:hover .button-text {
   color:#3b23ef;
 }
 
+#services{
+  height: 110vh; /* Defina a altura da segunda seção como 100% da altura da viewport */
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgb(84, 58, 180), rgba(13, 2, 51, 0.936),rgba(2, 4, 56, 0.842));
+ 
+}
 
+.accordion{
+  padding-top: 13%;
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+.accordion-item {
+  background: transparent !important;
+  box-shadow: none;
+  border-top: 1px solid #ffffff !important; 
+  border-left: 0  !important;
+  border-right: 0  !important;
+  border-radius: 0 !important ;
+ 
+}
+
+.accordion-item:last-child {
+  border-bottom: 1px solid #ffffff !important;
+}
+
+.accordion-body{
+  background: transparent !important;
+  color: #ffffff !important;
+  font-size: 1rem;
+}
+
+strong{
+  color: #5900ff;
+  font-weight: 700;
+}
+
+.accordion-button{
+
+  background-color: transparent !important;
+  border: transparent !important;
+  font-size: 1rem;
+  color: #ffffff !important;
+  outline: none !important;
+  font-weight: 500;
+}
+
+.accordion-button:active, .accordion-button:focus{
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:hover{  
+  background: transparent !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background: none;
+  color: none;
+  box-shadow: none;
+  animation: zoomInOut 0.5s forwards;
+  transform: scale(10.45s)!important;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.accordion-button::after {
+  background-image: none !important;
+  font-family: "Font Awesome 5 Free" !important;
+  font-weight: 900;
+  content: "\f1b0" !important;
+ 
+}
+
+/* O estilo abaixo é apenas para mostrar que a pata volta ao estado inicial quando o botão não está ativo */
+.accordion-button.collapsed::after {
+  transform: none !important;
+}
+
+.texto-servicos{
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  max-width: 700px; 
+  margin: 0;
+}
+
+.h2-servicos{
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.p-servicos{
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.img-service{
+  margin: 100px 30px 0px 0px;
+  float: left;
+  height: 450px;
+}
+
+.img-service2{
+  margin: 300px 30px 0px 0px;
+  float: right;
+  height: 450px;
+}
+
+.btn-servicos{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  padding-bottom: 20px;
+}
+  
+.button-servicos {
+  padding: 15px 20px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #4623e6;
+  color: #ffffff;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.button-servicos:hover {
+  background-color: #001693;
+  box-shadow: 0 0 20px #6028e250;
+  transform: scale(1.1);  
+}
+
+.button-servicos:active {
+   background-color: #001693;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+#marca {
+  height: 100vh; /* Defina a altura da segunda seção como 100% da altura da viewport */
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.side-left,
+.side-right {
+  width: 50%; /* Divide a seção em dois lados iguais */
+  height: 100%;
+  float: left;
+}
+
+.side-left {
+  position: relative;
+  background: linear-gradient(rgba(2, 4, 56, 0.842), rgba(13, 2, 51, 0.936),rgb(84, 58, 180));
+}
+
+.side-right {
+  position: relative;
+  background: linear-gradient(rgba(2, 4, 56, 0.842), rgba(13, 2, 51, 0.936),rgb(84, 58, 180));
+}
+
+.texto-marca {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  max-width: 800px; 
+  padding: 0px 10px 100px 30px;
+}
+
+.h2-marca {
+  padding: 0px 0px 20px 40px;
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 700; 
+  max-width: 500px; 
+}
+
+.p-marca {
+  padding: 0px 0px 0px 0px;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.img-blob{
+  position: absolute; /* Posição absoluta dentro da div .side-right */
+  top: 0; /* Posiciona no topo da div */
+  right: 0; /* Posiciona no lado direito da div */
+  width: 100%; /* Ajusta o tamanho para preencher a div */
+  height: 100%; /* Ajusta o tamanho para preencher a div */
+  margin: 10px 10px 10px 10px;
+}
+
+.img-catAnimation {
+ position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.btn-marca{
+  position: absolute;
+  bottom: 0;
+  left: 25%; /* Centraliza o botão na metade da largura da div pai */
+  transform: translateX(-50%); /* Centraliza o botão horizontalmente */
+  margin-bottom: 150px;
+}
+ 
+.button-marca {
+  padding: 15px 20px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #4623e6;
+  color: #ffffff;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.button-marca:hover {
+  background-color: #001693;
+  box-shadow: 0 0 20px #6028e250;
+  transform: scale(1.1);  
+}
+
+.button-marca:active {
+   background-color: #001693;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+/* Estilize o texto ou a imagem conforme necessário para um melhor ajuste estético */
 
 /* 
 .social-container {
