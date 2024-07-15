@@ -37,8 +37,8 @@ Sinta-se à vontade para contribuir com o projeto! Você pode ajudar de diversas
 
 ## Links Úteis
 
-- **Site Hospedado**: [MeowMeow Club](https://analeopoldino.github.io/meowmeow-club/)
-- **Repositório GitHub**: [MeowMeow Club no GitHub](https://github.com/analeopoldino/meowmeow-club)
+- **Site Hospedado**: [MeowMeow Club](https://analeopoldino.github.io/MeowMeowClub/)
+- **Repositório GitHub**: [MeowMeow Club no GitHub](https://github.com/analeopoldino/MeowMeowClub)
 
 ---
 
